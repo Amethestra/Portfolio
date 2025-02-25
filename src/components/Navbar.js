@@ -7,7 +7,6 @@ export default function Navbar() {
     <nav className="glass navbar-overlay fixed top-0 w-full p-4 z-50">
       <Link href="/" className = "flex items-center gap-2">
         <Image src="/ame_logo.png" alt = "logo" width={50} height={50} className="logo"/>
-        <span className="text-electric-cyan text-2xl font-bold glow-text">Amethestra's Portfolio</span>
       </Link>
 
 
