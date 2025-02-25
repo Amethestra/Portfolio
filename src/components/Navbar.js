@@ -11,7 +11,6 @@ export default function Navbar() {
 
 
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-electric-cyan text-2xl font-bold glow-text">Portfolio</h1>
         <div className="space-x-6">
           <Link href="/" className="text-white hover:text-neon-violet">Home</Link>
           <Link href="/projects" className="text-white hover:text-neon-violet">Projects</Link>
