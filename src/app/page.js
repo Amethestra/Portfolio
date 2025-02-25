@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
@@ -9,6 +10,19 @@ export default function Home() {
       <Navbar />
 
       <div className="flex flex-col items-center justify-center h-screen px-4 text-center">
+        {/* Logo Animation */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <Image src="/ame_logo.png"
+            alt="logo"
+            width={120} 
+            height={120}
+            className="mb-6" />
+        </motion.div>
+
         {/* Title Animation */}
         <motion.h1
           className="text-4xl md:text-6xl font-bold text-neonBlue"
