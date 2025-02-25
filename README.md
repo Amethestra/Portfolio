@@ -1,6 +1,7 @@
 # Amethestra Portfolio
 
-[![Portfolio Screenshot](docs/Screenshot 2025-02-25 025630.png)]
+![Portfolio Screenshot](docs/Screenshot%202025-02-25%20025630.png)
+
 
 ## Live Website
 **Check out the Website here**
