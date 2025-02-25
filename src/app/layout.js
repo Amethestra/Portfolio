@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import Footer from "@/components/Footer";
 
@@ -15,8 +16,13 @@ const geistMono = Geist_Mono({
 
 // Update metadata for SEO
 export const metadata = {
-  title: "My Portfolio | [Your Name]",
+  title: "Amethestra",
   description: "Showcasing my software development and game development work.",
+  icons: {
+    icon: "/ame_logo.png",
+    shortcut: "/ame_logo.png",
+    apple: "/ame_logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -18,8 +18,8 @@ export default function Home() {
         >
           <Image src="/ame_logo.png"
             alt="logo"
-            width={120} 
-            height={120}
+            width={380} 
+            height={380}
             className="mb-6" />
         </motion.div>
 
