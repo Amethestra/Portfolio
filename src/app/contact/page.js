@@ -62,7 +62,7 @@ export default function Contact() {
           </Link>
 
           {/* Email Contact */}
-          <Link href="mailto:your-email@example.com" className="contact-icon group">
+          <Link href="mailto:amethestra.vt@outlook.com" className="contact-icon group">
             <FaEnvelope size={50} />
             <span className="contact-tooltip">Email Me</span>
           </Link>

@@ -40,7 +40,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          Software Developer | Game Designer
+          Software Developer | Game Designer | Web Developer
         </motion.p>
 
         {/* Download CV Button */}

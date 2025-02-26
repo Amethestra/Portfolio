@@ -3,10 +3,14 @@ import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 
 const games = [
-  { title: "Cyber Racer", image: "/games/cyber-racer.png" },
-  { title: "Neon Fighter", image: "/games/neon-fighter.png" },
-  { title: "Arcade Quest", image: "/games/arcade-quest.png" },
-  { title: "Mecha Clash", image: "/games/mecha-clash.png" }
+  {
+    title: "Resonance",
+    image: "/games/Resonance.png",
+    linkto: "https://amethestra.itch.io/resonance",
+  },
+  { title: "Neon Fighter", image: "/games/neon-fighter.png", linkto: "" },
+  { title: "Arcade Quest", image: "/games/arcade-quest.png", linkto: "" },
+  { title: "Mecha Clash", image: "/games/mecha-clash.png", linkto: "" },
 ];
 
 export default function Games() {
@@ -31,19 +35,46 @@ export default function Games() {
           {games.map((game, index) => (
             <motion.div
               key={index}
-              className={`arcade-container`}
+              className="arcade-container"
               initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="arcade-machine">
-                <div className="arcade-screen">
-                  <img src={game.image} alt={game.title} className="w-full h-full object-cover" />
+              {game.linkto ? (
+                <a
+                  href={game.linkto}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="arcade-machine"
+                >
+                  <div className="arcade-screen">
+                    <img
+                      src={game.image}
+                      alt={game.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mt-4">
+                    {game.title}
+                  </h3>
+                  <div className="arcade-controls"></div>
+                </a>
+              ) : (
+                <div className="arcade-machine">
+                  <div className="arcade-screen">
+                    <img
+                      src={game.image}
+                      alt={game.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mt-4">
+                    {game.title}
+                  </h3>
+                  <div className="arcade-controls"></div>
                 </div>
-                <h3 className="text-xl font-bold text-white mt-4">{game.title}</h3>
-                <div className="arcade-controls"></div>
-              </div>
+              )}
             </motion.div>
           ))}
         </div>
