@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 
-import "./globals.css";
+import "@/styles/globals.css";
+import "@/styles/webdev.css";
+import WebDevNavbar from "@/components/WebDevNavbar";
 import Footer from "@/components/Footer";
 
 // Load custom fonts
@@ -17,7 +19,7 @@ const geistMono = Geist_Mono({
 // Update metadata for SEO
 export const metadata = {
   title: "Amethestra",
-  description: "Showcasing my software development and game development work.",
+  description: "Showcasing my web development work.",
   icons: {
     icon: "/ame_logo.png",
     shortcut: "/ame_logo.png",
@@ -28,9 +30,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-        <Footer /> {/* Added Footer Here */}
+      <body className="webdev-theme">
+        <WebDevNavbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/WebDevNavbar";
 import Link from "next/link";
 
 export default function Home() {

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/WebDevNavbar";
 
 const games = [
   {
@@ -20,7 +20,7 @@ export default function Games() {
 
       <div className="container mx-auto py-16">
         <motion.h2
-          className="text-3xl font-bold text-neonPurple text-center glow-text mt-6"
+          className="text-3xl font-bold text-neonPurple text-center glow-text mt-6 pt-24"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}

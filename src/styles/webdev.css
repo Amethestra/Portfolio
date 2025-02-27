@@ -1,0 +1,228 @@
+/* 🌐 Web Dev Theme */
+.webdev-theme {
+    background-color: #1a151c;
+    color: #d1b1da;
+  }
+  
+  /* 🔹 Web Dev Navbar */
+  .webdev-navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--primary);
+    box-shadow: 0 4px 10px rgba(77, 55, 155, 0.3);
+  }
+  
+  /* 🔹 Navbar Links */
+  .webdev-navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .webdev-navbar a:hover {
+    color: var(--primary);
+  }
+  
+  /* 🔹 Logo Styling */
+  .logo {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    height: calc(100% - 4px);
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px var(--primary));
+  }
+  
+  /* 🔹 Project Card */
+  .project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(77, 55, 155, 0.3);
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 🔹 Footer */
+  .footer-glass {
+    background: rgba(20, 20, 30, 0.8);
+    backdrop-filter: blur(10px);
+    border-top: 2px solid var(--primary);
+    box-shadow: 0 -4px 10px var(--accent);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-icon {
+    transition: 0.3s ease-in-out;
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.1);
+    color: var(--accent);
+  }
+  
+  /* 🔹 Responsive Adjustments */
+  @media (max-width: 768px) {
+    .webdev-navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .logo {
+      height: 60px;
+    }
+  
+    .project-card {
+      padding: 15px;
+    }
+  }
+  
+/* 🎮 Arcade Machine Styling */
+.arcade-machine {
+    width: 350px;
+    height: 500px;
+    background: var(--background);
+    border-radius: 20px;
+    border: 3px solid var(--primary);
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px var(--accent);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+/* 🕹️ Arcade Screen */
+.arcade-screen {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    background: #000;
+    border: 5px solid var(--accent);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px var(--accent);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 🌟 Arcade Glow on Hover */
+.arcade-machine:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--accent), 0 0 40px var(--secondary);
+}
+
+/* 🎮 Arcade Controls */
+.arcade-controls {
+    width: 80%;
+    height: 20px;
+    background: var(--primary);
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--secondary);
+}
+
+/* 🕹️ Timeline Layout */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 50px 0;
+}
+
+/* 🔹 Glowing Timeline */
+.timeline-line {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: var(--accent);
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+/* Alternating Arcade Machine Layout */
+.arcade-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+/* 🟣 Left & Right Layout for Alternating Machines */
+.arcade-container:nth-child(even) {
+    justify-content: flex-start;
+}
+
+.arcade-container:nth-child(odd) {
+    justify-content: flex-end;
+}
+
+/* 🎮 Center Arcade Machines on Small Screens */
+@media (max-width: 768px) {
+    .arcade-container {
+        justify-content: center;
+    }
+}
+  
+/* 🔹 Website Card Styling */
+.website-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(77, 55, 155, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+  /* 🟣 Website Card Hover Effect */
+.website-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(77, 55, 155, 0.5);
+}
+  
+  /* 🖼️ Website Image */
+.website-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+  
+  /* 📱 Responsive Grid */
+.websites-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+  
+@media (min-width: 768px) {
+  .websites-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  
+@media (min-width: 1024px) {
+  .websites-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+  

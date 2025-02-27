@@ -15,7 +15,6 @@ export default function Footer() {
             className="footer-icon group"
           >
             <FaGithub size={30} />
-            <span className="footer-tooltip">GitHub</span>
           </Link>
 
           {/* Itch.io Link */}
@@ -25,12 +24,11 @@ export default function Footer() {
             className="footer-icon group"
           >
             <FaItchIo size={30} />
-            <span className="footer-tooltip">Itch.io</span>
           </Link>
         </div>
 
         <p className="text-sm text-gray-400 mt-2">
-          © {new Date().getFullYear()} Your Name. All Rights Reserved.
+          © {new Date().getFullYear()} Amethestra. All Rights Reserved.
         </p>
       </div>
     </footer>

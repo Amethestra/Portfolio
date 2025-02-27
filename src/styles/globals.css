@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔹 Global Theme Variables (Used Across Both Web Dev & VTuber Sections) */
+:root {
+  --text: #d1b1da;
+  --background: #1a151c;
+  --primary: #4d379b;
+  --secondary: #f2bcd1;
+  --accent: #302ad3;
+}
+
+/* 🔹 Universal Font & Body Reset */
+body {
+  font-family: "Orbitron", sans-serif;
+  overflow-x: hidden;
+}
+
+/* 🔹 Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🔹 Basic Button Style (Shared Across Both Sections) */
+.btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Shared Responsive Settings */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/WebDevNavbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { FaGithub, FaEnvelope } from "react-icons/fa";
@@ -46,7 +46,7 @@ export default function Contact() {
       <Navbar />
       <div className="container mx-auto py-16 flex flex-col items-center">
         {/* Contact Header */}
-        <h2 className="text-4xl font-bold text-neon-purple text-center glow-text">
+        <h2 className="text-4xl font-bold text-neon-purple text-center glow-text pt-24">
           Let's Connect!
         </h2>
         <p className="text-center text-gray-400 mt-2">
@@ -58,13 +58,11 @@ export default function Contact() {
           {/* GitHub Link */}
           <Link href={`https://github.com/${GITHUB_USERNAME}`} target="_blank" className="contact-icon group">
             <FaGithub size={50} />
-            <span className="contact-tooltip">GitHub</span>
           </Link>
 
           {/* Email Contact */}
           <Link href="mailto:amethestra.vt@outlook.com" className="contact-icon group">
             <FaEnvelope size={50} />
-            <span className="contact-tooltip">Email Me</span>
           </Link>
         </div>
 
@@ -99,7 +97,6 @@ export default function Contact() {
           )}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

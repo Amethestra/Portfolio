@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import GameCard from "@/components/GameCard";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/WebDevNavbar";
 
 export default function Games() {
   return (
