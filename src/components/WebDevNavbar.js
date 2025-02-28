@@ -1,8 +1,16 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function WebDevNavbar() {
+  const router = useRouter();
+
+  const switchToVTuberMode = (e) => {
+    e.preventDefault();
+    router.push("/vtuber");
+    setTimeout(() => window.location.reload(), 100);
+  };
   return (
     <nav className="webdev-navbar fixed top-0 w-full px-6 z-50 flex justify-between items-center">
       {/* Logo */}
@@ -23,6 +31,11 @@ export default function WebDevNavbar() {
         <Link href="/games" className="text-white hover:text-neon-violet">Games</Link>
         <Link href="/contact" className="text-white hover:text-neon-violet">Contact</Link>
       </div>
+
+      <button onClick={switchToVTuberMode} className="toggle-switch">
+        VTuber Mode
+      </button>
+
     </nav>
   );
 }
