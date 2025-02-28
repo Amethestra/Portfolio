@@ -34,7 +34,7 @@ export default function VTuberHome() {
                 </motion.h1>
 
                 <div className="mt-4 flex justify-center gap-6">
-                    <Link href="vtuber/about" className="vtuber-btn">About</Link>
+                    <Link href="vtuber/about" className="vtuber-btn">About Me</Link>
                     <Link href="vtuber/model" className="vtuber-btn">Model</Link>
                     <Link href="vtuber/streaming" className="vtuber-btn">Streaming</Link>
                 </div>
