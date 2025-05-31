@@ -41,9 +41,11 @@ export default function WebDevSidebar() {
           <li className="menu-item">
             <Link href="/games" onClick={() => setOpen(false)}>Games</Link>
             <ul className="submenu">
-              <a href ="https://amethestra.itch.io/">
-                <li className="submenu-item">Browser Games</li>
-              </a>
+              <li className="submenu-item">
+                <a href="https://amethestra.itch.io/" target="_blank" rel="noopener noreferrer">
+                  Browser Games ↗
+                </a>
+              </li>
             </ul>
           </li>
           <li className="menu-item">
