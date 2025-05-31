@@ -36,24 +36,18 @@ export default function WebDevSidebar() {
           <li className="menu-item">
             <Link href="/projects" onClick={() => setOpen(false)}>Projects</Link>
             <ul className="submenu">
-              <li className="submenu-item">Featured</li>
-              <li className="submenu-item">Archived</li>
             </ul>
           </li>
           <li className="menu-item">
             <Link href="/games" onClick={() => setOpen(false)}>Games</Link>
             <ul className="submenu">
-              <li className="submenu-item">Browser Games</li>
-              <li className="submenu-item">Downloads</li>
+              <a href ="https://amethestra.itch.io/">
+                <li className="submenu-item">Browser Games</li>
+              </a>
             </ul>
           </li>
           <li className="menu-item">
             <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
-          </li>
-          <li className="menu-item">
-            <button onClick={switchToVTuberMode} className="toggle-switch">
-              <span className="toggle-text">VTuber Mode</span>
-            </button>
           </li>
         </ul>
       </nav>
